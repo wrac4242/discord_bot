@@ -2,3 +2,6 @@ src/.env
 node_modules
 package-lock.json
 tsconfig.tsbuildinfo
+
+src/build
+!src/build/.gitkeeper
