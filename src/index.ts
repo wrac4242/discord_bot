@@ -5,7 +5,7 @@ const client = new Discord.Client({
     partials: ['MESSAGE', 'REACTION', 'CHANNEL'],
 });
 
-let prefix: string = "$";
+let prefix = "$";
 
 
 client.on('ready', () => {
@@ -17,7 +17,7 @@ client.on('message', async (msg) => {
     if (msg.content[0] != prefix) {
         return
     }
-    let message: string = msg.content.substring(1);
+    let message= msg.content.substring(1);
 
     if (message === 'Hello') {
         msg.reply('Hi')

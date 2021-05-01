@@ -3,5 +3,5 @@ node_modules
 package-lock.json
 tsconfig.tsbuildinfo
 
-src/build
-!src/build/.gitkeeper
+build
+!build/.gitkeeper
