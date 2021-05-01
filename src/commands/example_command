@@ -5,7 +5,7 @@ module.exports = {
 	description: 'example command',
     guildOnly: true,
     usage: '<error> <404>',
-    cooldown: 5,
+    args: true,
     aliases: ['foo', 'bar'],
 	execute(message: Discord.Message, args: string[]) {
 		return message.channel.send(`Somethings Wrong I can Feel It`);
