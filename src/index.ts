@@ -5,8 +5,7 @@ const client = new Discord.Client({
     partials: ['MESSAGE', 'REACTION', 'CHANNEL'],
 });
 
-let prefix = "$";
-
+const config = require("../config.json");
 
 client.on('ready', () => {
     console.log('Bot is ready');
@@ -14,7 +13,7 @@ client.on('ready', () => {
 
 
 client.on('message', async (msg) => {
-    if (msg.content[0] != prefix) {
+    if (msg.content[0] != config.prefix) {
         return
     }
     let message= msg.content.substring(1);
@@ -83,4 +82,4 @@ client
     .on("error", err => console.log("Client error.", err))
     .on("rateLimit", rateLimitInfo => console.log("Rate limited.", JSON.stringify(rateLimitInfo)))
     .on("warn", info => console.log("Warning.", info))
-    .login(process.env.BOT_TOKEN);
+    .login(config.bot_token);
