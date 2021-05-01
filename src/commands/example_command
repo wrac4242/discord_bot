@@ -1,0 +1,13 @@
+import Discord = require('discord.js');
+
+module.exports = {
+	name: 'example-command',
+	description: 'example command',
+    guildOnly: true,
+    usage: '<error> <404>',
+    cooldown: 5,
+    aliases: ['foo', 'bar'],
+	execute(message: Discord.Message, args: string[]) {
+		return message.channel.send(`Somethings Wrong I can Feel It`);
+	},
+};
