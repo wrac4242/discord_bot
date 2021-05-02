@@ -6,7 +6,7 @@ module.exports = {
     description: 'Reloads a command',
     args: true,
     guildOnly: false,
-    permissions: 3,
+    permissions: 4,
     execute(message: Discord.Message, args: string[], commands: any) {
         const commandName = args[0].toLowerCase();
         const command = commands.get(commandName)
