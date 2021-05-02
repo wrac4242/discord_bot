@@ -10,7 +10,7 @@ const assistance = require('./utilities/assistance.js')
 
 const { prefix, bot_token } = require('../config.json');
 
-const commands = new Discord.Collection();
+const commands = new Discord.Collection(); 
 const commandFolders = fs.readdirSync('./commands');
 
 for (const folder of commandFolders) {

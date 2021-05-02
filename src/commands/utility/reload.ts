@@ -6,6 +6,7 @@ module.exports = {
     description: 'Reloads a command',
     args: true,
     guildOnly: false,
+    aliases: ['rel'],
     permissions: 4,
     execute(message: Discord.Message, args: string[], commands: any) {
         const commandName = args[0].toLowerCase();
@@ -23,6 +24,7 @@ module.exports = {
             const newCommand = require(`../${folderName}/${command.name}.js`);
             commands.set(newCommand.name, newCommand);
             message.channel.send(`Command \`${newCommand.name}\` was reloaded!`);
+            console.error(`Command \`${newCommand.name}\` was reloaded!`);
         } catch (error) {
             console.error(error);
             message.channel.send(`There was an error while reloading a command \`${command.name}\`:\n\`${error.message}\``);
