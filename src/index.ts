@@ -8,10 +8,12 @@ const client = new Discord.Client({
 
 const assistance = require('./utilities/assistance.js')
 
-const { prefix, bot_token } = require('../config.json');
+const { prefix } = require('../config.json');
 
-const commands = new Discord.Collection(); 
+const commands = new Discord.Collection();
 const commandFolders = fs.readdirSync('./commands');
+
+const BOT_TOKEN = process.env.BOT_TOKEN;
 
 for (const folder of commandFolders) {
     const commandFiles = fs.readdirSync(`./commands/${folder}`).filter(file => file.endsWith('.js'));
@@ -66,9 +68,8 @@ client.on('message', async (message): Promise<any> => {
 
 });
 
-
 client
     .on("error", err => console.log("Client error.", err))
     .on("rateLimit", rateLimitInfo => console.log("Rate limited.", JSON.stringify(rateLimitInfo)))
     .on("warn", info => console.log("Warning.", info))
-    .login(bot_token);
+    .login(BOT_TOKEN);
