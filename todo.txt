@@ -1,9 +1,9 @@
-guildinfo
 userinfo
 botinfo
 use embeds
 sharding - not needed for a while
 webhooks?
 
+avatar command
 support link
 bot invite

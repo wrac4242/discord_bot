@@ -15,7 +15,12 @@ module.exports = {
         let guild = message.guild;
 
         let name = guild.name;
-        let owner = guild.owner.user.tag;
+		let owner:string;
+		if (guild.owner != null) {
+         	owner = guild.owner.user.tag;
+		} else {
+			owner = "Wumpus#0000";
+		}
         let userCount = guild.memberCount;
         let channelCount = guild.channels.cache.size;
         let roleCount = guild.roles.cache.size;
