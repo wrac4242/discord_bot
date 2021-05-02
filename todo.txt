@@ -15,3 +15,5 @@ source command
 eval command
 make ping better
 make help better
+
+fix reloadall 
