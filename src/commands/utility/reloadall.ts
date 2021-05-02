@@ -9,15 +9,19 @@ module.exports = {
     args: false,
 	permissions: 5, // bot owner 4 // bot admin 3 // server owner 2 // server admin 1 server mod 0 // server member
     aliases: ['rla'],
-	execute(_: Discord.Message, __: string[], commands: any) {
+	execute(message: Discord.Message, __: string[], commands: any) {
+        console.log("Reloading all commands");
         const commandFolders = fs.readdirSync('./commands');
         for (const folder of commandFolders) {
             const commandFiles = fs.readdirSync(`./commands/${folder}`).filter(file => file.endsWith('.js'));
             for (const file of commandFiles) {
-                const command = require(`./commands/${folder}/${file}`);
+                const command = require(`../${folder}/${file}`);
                 commands.set(command.name, command);
+                console.log(`Reloaded: ${command.name}`);
             }
         }
+        console.log("Reloaded all commands");
+        message.channel.send("Reloaded all commands");
 
 	},
 };
