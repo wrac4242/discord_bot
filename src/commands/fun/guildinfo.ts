@@ -15,7 +15,7 @@ module.exports = {
         let guild = message.guild;
 
         let name = guild.name;
-        let owner = guild.owner;
+        let owner = guild.owner.user.tag;
         let userCount = guild.memberCount;
         let channelCount = guild.channels.cache.size;
         let roleCount = guild.roles.cache.size;
