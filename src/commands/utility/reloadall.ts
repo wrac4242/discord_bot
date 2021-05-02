@@ -10,6 +10,8 @@ module.exports = {
 	permissions: 5, // bot owner 4 // bot admin 3 // server owner 2 // server admin 1 server mod 0 // server member
     aliases: ['rla'],
 	execute(message: Discord.Message, __: string[], commands: any) {
+		if (1==1) return message.channel.send("Error, reloadall not working atm, fix it");
+		commands = new Discord.Collection();
         console.log("Reloading all commands");
         const commandFolders = fs.readdirSync('./commands');
         for (const folder of commandFolders) {
@@ -22,6 +24,6 @@ module.exports = {
         }
         console.log("Reloaded all commands");
         message.channel.send("Reloaded all commands");
-
+		return;
 	},
 };
