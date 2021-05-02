@@ -6,6 +6,8 @@ const client = new Discord.Client({
     partials: ['MESSAGE', 'REACTION', 'CHANNEL'],
 });
 
+const assistance = require('./utilities/assistance.js')
+
 const { prefix, bot_token } = require('../config.json');
 
 const commands = new Discord.Collection();
@@ -40,11 +42,8 @@ client.on('message', async (message): Promise<any> => {
         return message.reply('I can\'t execute that command inside DMs!');
     }
 
-    if (command.permissions && message.channel.type !== 'dm') {
-        const authorPerms = message.channel.permissionsFor(message.author) ;
-        if (!authorPerms || !authorPerms.has(command.permissions)) {
-            return message.reply('You can not do this!');
-        }
+    if (assistance.getPermissionLevel(message.member) < command.permissions) {
+        return message.reply('You do not have the valid permissions!');
     }
 
     if (command.args && !args.length) {

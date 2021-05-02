@@ -1,5 +1,5 @@
 {
     "bot_token": "<your token here>",
-    "owner_id": "<owner id here>",
+    "admins": ["<ownerID here>"],
     "prefix": "$"
 }
