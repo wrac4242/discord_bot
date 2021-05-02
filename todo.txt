@@ -16,3 +16,6 @@ source command
 eval command
 make ping better
 make help better
+
+actually create a name for the bot
+seperate dev bot and main bot
