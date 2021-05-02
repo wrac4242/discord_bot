@@ -1,10 +1,12 @@
 import Discord = require('discord.js');
-const fs = require('fs');
+import fs from 'fs';
 
 module.exports = {
     name: 'reload',
     description: 'Reloads a command',
     args: true,
+    guildOnly: false,
+    permissions: 3,
     execute(message: Discord.Message, args: string[], commands: any) {
         const commandName = args[0].toLowerCase();
         const command = commands.get(commandName)

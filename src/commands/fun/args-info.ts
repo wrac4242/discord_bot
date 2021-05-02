@@ -4,8 +4,10 @@ module.exports = {
 	name: 'args-info',
 	description: 'Information about the arguments provided.',
     guildOnly: true,
-    usage: '<error> <404>',
+    usage: '<arg1> <arg2>',
+	args: true,
     aliases: ['args'],
+	permissions: 0,
 	execute(message: Discord.Message, args: string[]) {
 		if (args[0] === 'foo') {
 			return message.channel.send('bar');
