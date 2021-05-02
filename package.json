@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "cd build && node ./index.js",
     "watch-ts": "tsc -w",
-    "postinstall": "tsc"},
+    "postinstall": "npm install -g typescript && tsc"},
   "author": "wrac4242",
   "license": "ISC",
   "dependencies": {
