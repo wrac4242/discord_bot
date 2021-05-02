@@ -17,7 +17,7 @@ module.exports = {
             for (const file of commandFiles) {
                 const command = require(`../${folder}/${file}`);
                 commands.set(command.name, command);
-                console.log(`Reloaded: ${command.name}`);
+				console.log(`Reloading ${command.name}`);
             }
         }
         console.log("Reloaded all commands");

@@ -1,0 +1,9 @@
+guildinfo
+userinfo
+botinfo
+use embeds
+sharding - not needed for a while
+webhooks?
+
+support link
+bot invite
