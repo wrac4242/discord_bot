@@ -5,7 +5,6 @@ sharding - not needed for a while
 webhooks?
 
 support link
-bot invite
 
 define, can take a word or sentence, and defines all of them
 currency system?
@@ -16,6 +15,3 @@ source command
 eval command
 make ping better
 make help better
-
-actually create a name for the bot
-seperate dev bot and main bot

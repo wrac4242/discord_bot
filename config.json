@@ -1,3 +1,4 @@
 {
-    "admins": ["365517405558145025"]
+    "admins": ["365517405558145025"],
+    "bot_invite": "https://discord.com/api/oauth2/authorize?client_id=713488406554083379&permissions=4294306935&scope=bot"
 }
