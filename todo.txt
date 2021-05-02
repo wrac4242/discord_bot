@@ -6,3 +6,11 @@ webhooks?
 
 support link
 bot invite
+
+define, can take a word or sentence, and defines all of them
+currency system?
+username/email checker using haveibeenpwned
+
+credit command
+source command
+eval command
