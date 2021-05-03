@@ -6,7 +6,6 @@ module.exports = {
     description: 'List all of my commands or info about a specific command.',
     aliases: ['commands'],
     usage: '[command name]',
-    guildOnly: false,
     args: false,
     permissions: 0,
     execute(message: Discord.Message, args: string[], commands: any) {

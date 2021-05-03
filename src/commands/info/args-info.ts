@@ -3,7 +3,6 @@ import Discord = require('discord.js');
 module.exports = {
 	name: 'args-info',
 	description: 'Information about the arguments provided.',
-    guildOnly: true,
     usage: '<arg1> <arg2>',
 	args: true,
     aliases: ['args'],

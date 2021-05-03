@@ -41,8 +41,8 @@ client.on('message', async (message): Promise<any> => {
         return;
     }
 
-    if (command.guildOnly && message.channel.type === 'dm') {
-        return message.reply('I can\'t execute that command inside DMs!');
+    if (message.channel.type === 'dm') {
+        return message.reply('I can\'t execute commands inside DMs!');
     }
 
     if (assistance.getPermissionLevel(message.member) < command.permissions) {

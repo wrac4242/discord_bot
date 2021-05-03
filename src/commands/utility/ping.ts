@@ -3,7 +3,6 @@ import Discord = require('discord.js');
 module.exports = {
 	name: 'ping',
 	description: 'Ping!',
-    guildOnly: false,
     usage: 'no args needed 🙃',
     args: false,
     aliases: ['pong'],

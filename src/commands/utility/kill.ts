@@ -4,7 +4,6 @@ const { admins } = require('../../../config.json');
 module.exports = {
 	name: 'kill',
 	description: 'kills the bot, owner only',
-    guildOnly: true,
     usage: '',
     args: false,
 	permissions: 5, // bot owner 4 // bot admin 3 // server owner 2 // server admin 1 server mod 0 // server member
