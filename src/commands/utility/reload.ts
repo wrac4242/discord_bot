@@ -5,7 +5,6 @@ module.exports = {
     name: 'reload',
     description: 'Reloads a command',
     args: true,
-    guildOnly: false,
     aliases: ['rel'],
     permissions: 4,
     execute(message: Discord.Message, args: string[], commands: any) {

@@ -4,7 +4,6 @@ import Discord = require('discord.js');
 module.exports = {
 	name: 'guildinfo',
 	description: 'gives information about the current guild',
-    guildOnly: true,
     usage: '',
     args: false,
 	permissions: 0,

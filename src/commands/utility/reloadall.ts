@@ -4,7 +4,6 @@ import fs = require('fs');
 module.exports = {
 	name: 'reloadall',
 	description: 'reload all commands',
-    guildOnly: false,
     usage: '',
     args: false,
 	permissions: 5, // bot owner 4 // bot admin 3 // server owner 2 // server admin 1 server mod 0 // server member

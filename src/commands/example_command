@@ -3,7 +3,6 @@ import Discord = require('discord.js');
 module.exports = {
 	name: 'example-command',
 	description: 'example command',
-    guildOnly: true,
     usage: '<error> <404>',
     args: true,
 	permissions: //5 // bot owner 4 // bot admin 3 // server owner 2 // server admin 1 server mod 0 // server member

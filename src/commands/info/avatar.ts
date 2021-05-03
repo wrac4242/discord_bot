@@ -3,7 +3,6 @@ import Discord = require('discord.js');
 module.exports = {
 	name: 'avatar',
 	description: 'gives the avatar of the running user',
-    guildOnly: false,
     usage: '',
     args: false,
 	permissions: 0,
