@@ -6,3 +6,4 @@ tsconfig.tsbuildinfo
 build
 !build/.gitkeeper
 config.json
+nohup.out

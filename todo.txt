@@ -27,3 +27,6 @@ bot blacklist
     server
     and user
     channel?
+
+logging on guild join
+logging of more types?
