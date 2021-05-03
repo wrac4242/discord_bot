@@ -6,7 +6,7 @@ const client = new Discord.Client({
     partials: ['MESSAGE', 'REACTION', 'CHANNEL'],
 });
 
-const assistance = require('./utilities/assistance.js')
+const assistance = require('./utilities/assistance.js');
 
 const commands = new Discord.Collection();
 const commandFolders = fs.readdirSync('./commands');

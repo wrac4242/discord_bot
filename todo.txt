@@ -19,3 +19,6 @@ make help better
 restart command
 
 fix reloadall
+
+better code linting
+check all command permissions
