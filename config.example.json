@@ -1,5 +1,6 @@
 {
     "bot_token": "<your token here>",
     "admins": ["<ownerID here>"],
+    "bot_invite_perms": "4294306935",
     "prefix": "$"
 }
