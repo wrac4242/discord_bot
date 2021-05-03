@@ -36,7 +36,10 @@ client.on('message', async (message): Promise<any> => {
 
     const command: any = commands.get(commandName)
         || commands.find((cmd: any) => cmd.aliases && cmd.aliases.includes(commandName));
-    if (!command) return;
+    if (!command) {
+        message.channel.send("Error, not a command");
+        return;
+    }
 
     if (command.guildOnly && message.channel.type === 'dm') {
         return message.reply('I can\'t execute that command inside DMs!');
