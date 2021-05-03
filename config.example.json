@@ -3,5 +3,5 @@
     "admins": ["<ownerID here>"],
     "bot_invite_perms": "4294306935",
     "prefix": "$",
-    "sourceRepo": "sauce"
+    "sourceRepo": "https://github.com/wrac4242/discord_bot/"
 }
