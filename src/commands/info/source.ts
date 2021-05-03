@@ -8,7 +8,7 @@ module.exports = {
     args: false,
 	permissions: 0,//5 // bot owner 4 // bot admin 3 // server owner 2 // server admin 1 server mod 0 // server member
     aliases: ['sauce'],
-	execute(message: Discord.Message, args: string[]) {
+	execute(message: Discord.Message, _: string[]) {
 		return message.channel.send(`Source: <${sourceRepo}>`);
 	},
 };
