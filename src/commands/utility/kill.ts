@@ -6,7 +6,7 @@ module.exports = {
     guildOnly: false,
     usage: '',
     args: false,
-	permissions: 4, // bot owner 4 // bot admin 3 // server owner 2 // server admin 1 server mod 0 // server member
+	permissions: 5, // bot owner 4 // bot admin 3 // server owner 2 // server admin 1 server mod 0 // server member
     aliases: [],
 	execute(message: Discord.Message, _: string[]) {
         console.log("killing")
