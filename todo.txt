@@ -22,3 +22,8 @@ fix reloadall
 
 better code linting
 check all command permissions
+
+bot blacklist
+    server
+    and user
+    channel?
