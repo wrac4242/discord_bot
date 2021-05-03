@@ -16,8 +16,6 @@ eval command
 make ping better
 make help better
 
-shutdown command
 restart command
-git pull command
 
 fix reloadall
