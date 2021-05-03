@@ -11,7 +11,7 @@ const assistance = require('./utilities/assistance.js')
 const commands = new Discord.Collection();
 const commandFolders = fs.readdirSync('./commands');
 
-let prefix = process.env.PREFIX || "$";
+const { prefix } = require('../../../config.json');
 
 for (const folder of commandFolders) {
     const commandFiles = fs.readdirSync(`./commands/${folder}`).filter(file => file.endsWith('.js'));
