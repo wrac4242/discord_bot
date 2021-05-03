@@ -28,6 +28,11 @@ client.on('ready', () => {
 
 
 client.on('message', async (message): Promise<any> => {
+
+    if (message.mentions.users.first() == message.client.user) {
+        message.channel.send(`My prefix is ${prefix}`)
+    }
+    
     if (!message.content.startsWith(prefix) || message.author.bot) return;
 
     const args = message.content.slice(prefix.length).trim().split(/ +/) || "";
