@@ -1,10 +1,28 @@
-userinfo
+userinfo - allow id/mention as permissions
+    user mention
+    how long user has been in server
+    how long since user created
+    user currency? when added
+    avatar?
 botinfo
+    amount of servers
+    uptime
+    amount of users
+    owner
+    time in this server
+
+avatar command - allow id/mention in permissions
+
 use embeds
 sharding - not needed for a while
+    around 70-80 servers before i start to consider
+    or when it starts lagging
+
 webhooks?
+slash commands? added to new discordjs
 
 add a database/interaction with it
+    currency system
 
 support link
 
@@ -14,6 +32,9 @@ currency system?
     gives a slightly random amount of currency per MESSAGE
     time limit between messages
     blacklisted role possible then
+
+    buy items? if so what
+
 username/email checker using haveibeenpwned
 
 credit command
@@ -27,13 +48,15 @@ restart command
 
 fix reloadall
 
-better code linting
 check all command permissions
 
 bot blacklist
     server
     and user
     channel?
+    currency when added
+
+    possibly give 451 error code because "unavaliable for legal purposes"
 
 logging on guild join
 logging of more types?
