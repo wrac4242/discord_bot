@@ -60,3 +60,6 @@ bot blacklist
 
 logging on guild join
 logging of more types?
+
+create host server and support server
+host server has logging channels
