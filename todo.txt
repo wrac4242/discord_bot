@@ -4,16 +4,23 @@ use embeds
 sharding - not needed for a while
 webhooks?
 
+add a database/interaction with it
+
 support link
 
 define, can take a word or sentence, and defines all of them
 currency system?
+    requires a database
+    gives a slightly random amount of currency per MESSAGE
+    time limit between messages
+    blacklisted role possible then
 username/email checker using haveibeenpwned
 
 credit command
 source command
 eval command
 make ping better
+    add message time
 make help better
 
 restart command
